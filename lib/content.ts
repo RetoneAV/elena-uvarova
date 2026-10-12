@@ -1,5 +1,5 @@
 /**
- * Site copy for elenauvarova.com.
+ * Site copy for euvarova.com.
  * Edit this file to change the words on the site, then refresh the browser.
  *
  * Project photographs: add image: "/projects/your-file.jpg" on a project
@@ -9,7 +9,7 @@
 
 export const site = {
   name: "Elena Uvarova",
-  url: "https://elenauvarova.com",
+  url: "https://euvarova.com",
   email: "elenauvarova@me.com",
   phoneDisplay: "+44 7703 564394",
   phoneHref: "tel:+447703564394",

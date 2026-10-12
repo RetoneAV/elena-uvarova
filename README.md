@@ -1,6 +1,6 @@
 # Elena Uvarova
 
-Portfolio site for [elenauvarova.com](https://elenauvarova.com). Elena is a London-based creative producer working across immersive installations, light, and landmark projection.
+Portfolio site for [euvarova.com](https://euvarova.com). Elena is a London-based creative producer working across immersive installations, light, and landmark projection.
 
 The visual system follows the black, white, and gold type of [Skye Von’s about page](https://www.skyevon.com/about): Unbounded for headings, Space Grotesk for text. The projects index follows the large two-column tiles on [Tom Lebon’s projects page](https://www.tomlebon.com/projects).
 
@@ -37,29 +37,21 @@ Each project currently uses an original colour study. To use a photograph:
 
 There is no CV file in the repo yet. The “Request my CV” buttons open an email to elenauvarova@me.com. When you have a PDF, add it as `public/elena-uvarova-cv.pdf` and point those buttons at `/elena-uvarova-cv.pdf`.
 
-## Put this on GitHub under RetoneAV
+## GitHub
 
-This workspace does not have access to the RetoneAV GitHub account, so the repo has to be created from your machine.
+The site is in [RetoneAV/elena-uvarova](https://github.com/RetoneAV/elena-uvarova). Clone it, edit, then `git add`, `git commit`, and `git push`.
 
-1. Install the [GitHub CLI](https://cli.github.com/) and sign in as RetoneAV:
+```bash
+git clone https://github.com/RetoneAV/elena-uvarova.git
+cd elena-uvarova
+npm install
+npm run dev
+```
 
-   ```bash
-   gh auth login
-   ```
+## Cloudflare
 
-2. From this project folder:
+Production is a Cloudflare Worker named `elena-uvarova`, built with vinext. After `cf auth login`, deploy with:
 
-   ```bash
-   gh repo create RetoneAV/elena-uvarova --public --source=. --remote=github --push --description "Portfolio website for Elena Uvarova"
-   ```
-
-3. On the computer where you want to keep working:
-
-   ```bash
-   git clone https://github.com/RetoneAV/elena-uvarova.git
-   cd elena-uvarova
-   npm install
-   npm run dev
-   ```
-
-Edit locally, then `git add`, `git commit`, and `git push` to send the changes back to GitHub.
+```bash
+npm run deploy:vinext
+```
