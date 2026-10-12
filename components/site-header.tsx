@@ -28,8 +28,8 @@ export function SiteHeader() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-[96rem] items-center justify-between gap-6 px-6 py-5 md:px-10">
+    <header className="sticky top-0 z-50 bg-black">
+      <div className="relative z-50 mx-auto flex max-w-[96rem] items-center justify-between gap-6 bg-black px-6 py-5 md:px-10">
         <Link
           href="/"
           className="font-heading text-[1.25rem] font-black uppercase leading-none tracking-[-0.02em] text-white md:text-[1.7rem]"
@@ -69,7 +69,7 @@ export function SiteHeader() {
       {open ? (
         <nav
           id="mobile-nav"
-          className="absolute inset-x-0 top-full border-t border-white/10 bg-black px-6 py-8 md:px-10 xl:hidden"
+          className="fixed inset-0 z-40 overflow-y-auto bg-black px-6 pt-24 md:px-10 xl:hidden"
           aria-label="Primary"
         >
           <ul className="flex flex-col gap-5">

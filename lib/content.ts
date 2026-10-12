@@ -173,7 +173,7 @@ export const projects: Project[] = [
   },
   {
     slug: "feel-the-pull",
-    title: "Feel The Pull",
+    title: "Feel The Pull Installation",
     client: "Pixel Artworks",
     category: "Installation",
     summary:
