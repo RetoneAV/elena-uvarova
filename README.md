@@ -50,7 +50,7 @@ npm run dev
 
 ## Cloudflare
 
-Production is a Cloudflare Worker named `elena-uvarova`, built with vinext. After `cf auth login`, deploy with:
+Production is a Cloudflare Worker named `euvarova`, built with vinext. After `cf auth login`, deploy with:
 
 ```bash
 npm run deploy:vinext

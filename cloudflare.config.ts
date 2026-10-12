@@ -3,7 +3,7 @@ import { bindings, defineConfig, defineWorker } from "cf/config";
 export default defineConfig({
   accountId: "a01234a62f889947b00f83bbb4eb8e4d",
   worker: defineWorker({
-    name: "elena-uvarova",
+    name: "euvarova",
     entrypoint: "vinext/server/fetch-handler",
     compatibilityDate: "2026-10-12",
     compatibilityFlags: ["nodejs_compat"],
